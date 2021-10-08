@@ -51,7 +51,7 @@ public class Kata2 {
         }
         */
         
-        int [] data = new int[]{1, 2, 7, 5, 4, 1, 1, 1, 8 , 7, 2, 67, 87, 12, 15};
+        Integer [] data = {1, 2, 7, 5, 4, 1, 1, 1, 8 , 7, 2, 67, 87, 12, 15};
         
         Histogram histo = new Histogram(data);
         Map <Integer,Integer> histogr = histo.getHistogram();
