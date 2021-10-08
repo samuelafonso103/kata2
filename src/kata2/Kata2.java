@@ -52,14 +52,11 @@ public class Kata2 {
         */
         
         int [] data = new int[]{1, 2, 7, 5, 4, 1, 1, 1, 8 , 7, 2, 67, 87, 12, 15};
-        HashMap<Integer, Integer> histogram = new HashMap<>();
         
-        for (int key : data) {
-            histogram.put(key, histogram.containsKey(key) ? histogram.get(data[key]) + 1 : 1);
-        }
-        
-        for (Integer key : histogram.keySet()) {
-            System.out.println(key + " ==> " + histogram.get(key));
+        Histogram histo = new Histogram(data);
+        Map <Integer,Integer> histogr = histo.getHistogram();
+        for (Integer key : histogr.keySet()) {
+            System.out.println(key + " ==> " + histogr.get(key));
         }
     }
     
