@@ -51,11 +51,11 @@ public class Kata2 {
         }
         */
         
-        Integer [] data = {1, 2, 7, 5, 4, 1, 1, 1, 8 , 7, 2, 67, 87, 12, 15};
+        String [] data = {"Rosa", "Pepe", "María", "Pepe", "Pepe", "Rosa"};
         
         Histogram histo = new Histogram(data);
-        Map <Integer,Integer> histogr = histo.getHistogram();
-        for (Integer key : histogr.keySet()) {
+        Map <String,Integer> histogr = histo.getHistogram();
+        for (String key : histogr.keySet()) {
             System.out.println(key + " ==> " + histogr.get(key));
         }
     }
